@@ -1,0 +1,142 @@
+/* Material Design Color Variables */
+:root {
+    --primary-color: #6200EE;
+    --primary-light-color: #BB86FC;
+    --primary-dark-color: #3700B3;
+    --secondary-color: #03DAC6;
+    --secondary-dark-color: #018786;
+    --background-color-light: #FAFAFA;
+    --background-color-dark: #121212;
+    --text-color-light: #212121;
+    --text-color-dark: #E0E0E0;
+    --border-color-light: #BDBDBD;
+    --border-color-dark: #444;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-light);
+    transition: background-color 0.3s, color 0.3s;
+    color: var(--text-color-light);
+    line-height: 1.6;
+    opacity: 50;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#toggle-mode {
+    background:#121212 ;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    margin: 0.5rem 0 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9rem;
+}
+
+#academic-content,
+#digital-skills-content,
+#profile-content,
+#settings-content,
+#security-content {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid var(--border-color-light);
+    margin-top: 1rem;
+    opacity: 0.9;
+    border-radius: 4px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode header {
+    background-color: var(--primary-light-color);
+}
+
+body.dark-mode nav ul li a {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode #toggle-mode {
+    border: 1px solid var(--text-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode footer {
+    background-color: var(--primary-light-color);
+}
+
+body.dark-mode #academic-content,
+body.dark-mode #digital-skills-content,
+body.dark-mode #profile-content,
+body.dark-mode #settings-content,
+body.dark-mode #security-content {
+    background-color: #1E1E1E;
+    border-color: var(--border-color-dark);
+}
